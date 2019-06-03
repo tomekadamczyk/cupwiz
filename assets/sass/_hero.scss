@@ -1,0 +1,51 @@
+.cw-hero {
+    position: absolute; 
+    top: 0;    
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    display: flex;   
+    justify-content: center;    
+    align-items: center;
+    max-width: 90%;
+    width: 90%;
+    margin: auto;
+
+    &__carousel {
+        width: 100%;    
+        display: flex;  
+        justify-content: space-between;
+        margin-top: 40px;
+        text-transform: uppercase;
+
+        &__slide { 
+            color: $white;  
+            align-self: center;
+            text-align: center;
+            cursor: pointer;
+            
+            &:hover {
+                color: $primary;
+            }
+
+            &--out {
+                font-size: 24px;
+            }
+
+            &--in {
+                font-size: 30px;
+            }
+
+            &--middle {
+                font-size: 36px;
+                color: $primary;
+            }
+
+            span {
+                margin-bottom: 20px;
+                display: block;
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.cw-form {
+    display: inline-block;
+    width: 100%;
+    
+    @media (min-width: 768px) {
+        width: 49%;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input {
+        display: block;
+        margin: 5px 0;
+        width: 100%;
+        border: 1px solid $primary;
+        padding: 2px 6px;
+        font-size: 16px;
+
+        &:focus {
+            outline: 2px solid lighten($primary, 15%);
+        }
+    }
+}

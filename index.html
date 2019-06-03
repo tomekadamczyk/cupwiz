@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Cupwiz</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <meta name="keywords" content="Cupwiz" />
+        <meta name="description" content="Cupwiz" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    </head>
+
+    <body>
+        <header class="cw-header">
+            <div class="cw-util-blur-background cw-header__background"></div>
+            <div class="cw-util-header-gradient"></div>
+             
+            <div id="dropdown" class="cw-nav__dropdownList">
+                <div>
+                    <a href="#">Home</a>
+                </div>
+                <span class="cw-nav__separator">/</span>
+                <div class="cw-nav__menu__item--dropdown">
+                    <a href="#">Readymade designs</a>
+                </div>
+                <span class="cw-nav__separator">/</span>
+                <div class="cw-nav__menu__item--dropdown">
+                    <a href="#">Patterns</a>
+                </div>
+            </div>
+            <div class="cw-layout">
+                <div class="cw-header__container">
+                    <nav class="cw-nav">
+                        <div class="cw-nav__logo">
+                            <a href="#">
+                                <img src="./assets/svg/logo mono.svg" alt="Cupwiz logo" />
+                            </a>
+                        </div>
+                        <div class="cw-nav__menu cw-nav__menu--left" id="menu">
+                            <div class="cw-nav__menu__item">
+                                <a href="#" id="dropdownHandler" class="cw-nav__menu__item--dropdown">Shop</a>  
+                            </div>
+                         
+                            <div class="cw-nav__menu__item">
+                                <a href="#">Cupwiz magic</a>
+                            </div>
+                            <div class="cw-nav__menu__item">
+                                <a href="#">Our cups</a>
+                            </div>
+                            <div class="cw-nav__menu__item">
+                                <a href="#">About us</a>
+                            </div>
+                            <div class="cw-nav__menu__item">
+                                <a href="#">Blog</a>
+                            </div>
+                            <div class="cw-nav__menu__item">
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                        <div class="cw-nav__panel">
+                            <div class="cw-nav__panel__item cw-hamburger" id="hamburger">
+                                <div id="hamburger-inner" class="cw-hamburger__icon"></div>
+                            </div>
+                            <div class="cw-nav__panel__item">
+                                <img src="./assets/svg/header search.svg" alt="Search" />
+                            </div>
+                            <div class="cw-nav__panel__item">
+                                <img src="./assets/svg/header account.svg" alt="Account" />
+                            </div>
+                            <div class="cw-nav__panel__item">
+                                <div id="wishlist" data-wishlist="0" class="cw-nav__panel__label cw-nav__panel__label--wishlist">
+                                    <img src="./assets/svg/header wishlist.svg" alt="Wishlist" />
+                                </div>
+                            </div>
+                            <div class="cw-nav__panel__item">
+                                <div id="cart" data-cart="0" class="cw-nav__panel__label cw-nav__panel__label--cart">
+                                    <img src="./assets/svg/header cart.svg" alt="Cart" />
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <section class="cw-hero">
+                <div class="cw-hero__carousel">
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--out">
+                        Seasons
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--in">
+                        Coffee
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--middle">
+                        <span>Readymade<br>patterns<br></span>
+                        Patterns
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--in">
+                        Cities
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--out">
+                        Occasion
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--out">
+                        Seasons
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--in">
+                        Coffee
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--middle">
+                        <span>Readymade<br>patterns<br></span>
+                        Patterns
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--in">
+                        Cities
+                    </div>
+                    <div class="cw-hero__carousel__slide cw-hero__carousel__slide--out">
+                        Occasion
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <section class="cw-layout cw-layout__mainview">
+            <section class="cw-layout__top-panel">
+                <div class="cw-select cw-select--productsAmount">Products per page 
+                    <select id="productsPerPage" name="productsPerPage">
+                        <option value="default">3</option>
+                        <option value="6">6</option>
+                        <option value="8">9</option>
+                        <option value="19">12</option>
+                    </select>
+                </div>
+                <div class="cw-pagination">
+                    <div class="cw-pagination__control cw-pagination__control--arrowLeft">Prev</div>
+                    <div class="cw-pagination__control">1</div>
+                    <div class="cw-pagination__control">2</div>
+                    <div class="cw-pagination__control">3</div>
+                    <div class="cw-pagination__control">...</div>
+                    <div class="cw-pagination__control">10</div>
+                    <div class="cw-pagination__control cw-pagination__control--arrowRight">Next</div>
+                </div>
+                <div class="cw-select cw-select--sortBy">Sort by 
+                    <select id="productsPerPage" name="sortBy">
+                        <option value="default"></option>
+                        <option value="1">Price</option>
+                        <option value="2">Name</option>
+                        <option value="3">Sale</option>
+                        <option value="4">Newest</option>
+                        <option value="5">Oldest</option>
+                    </select>
+                </div>
+            </section>
+            <section class="cw-layout__product-list">
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup1.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup1@2x.png" alt="cup1" />
+                            <span class="cw-cup__image__productLabel cw-cup__image__productLabel--sale">sale</span>
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Black and white crazy stripes cup">Black and white crazy stripes cup</h4>
+                        </div>
+                        <div data-salePrice="£80.87" class="cw-cup__info cw-cup__info--withSale">
+                            from: <span class="cw-cup__price cw-cup__price--withSale">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup2.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup2@2x.png" alt="cup1" />
+                            <span class="cw-cup__image__productLabel cw-cup__image__productLabel--new">new</span>
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Green square rush cup">Green square rush cup</h4>
+                        </div>
+                        <div class="cw-cup__info">
+                            from: <span class="cw-cup__price">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup1.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup1@2x.png" alt="cup1" />
+                            <span class="cw-cup__image__productLabel cw-cup__image__productLabel--sale">sale</span>
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Black and white crazy stripes cup">Black and white crazy stripes cup</h4>
+                        </div>
+                        <div data-salePrice="£80.87" class="cw-cup__info cw-cup__info--withSale">
+                            from: <span class="cw-cup__price cw-cup__price--withSale">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup2.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup2@2x.png" alt="cup1" />
+                            <span class="cw-cup__image__productLabel cw-cup__image__productLabel--sale">sale</span>
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Green square rush cup">Green square rush cup</h4>
+                        </div>
+                        <div data-salePrice="£80.87" class="cw-cup__info cw-cup__info--withSale">
+                            from: <span class="cw-cup__price cw-cup__price--withSale">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup1.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup1@2x.png" alt="cup1" />
+                            <span class="cw-cup__image__productLabel cw-cup__image__productLabel--new">new</span>
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Green square rush cup">Green square rush cup</h4>
+                        </div>
+                        <div class="cw-cup__info">
+                            from: <span class="cw-cup__price">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup2.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup2@2x.png" alt="cup1" />
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Green square rush cup">Green square rush cup</h4>
+                        </div>
+                        <div class="cw-cup__info">
+                            from: <span class="cw-cup__price">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup1.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup1@2x.png" alt="cup1" />
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Black and white crazy stripes cup">Black and white crazy stripes cup</h4>
+                        </div>
+                        <div class="cw-cup__info">
+                            from: <span class="cw-cup__price">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup2.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup2@2x.png" alt="cup1" />
+                            <span class="cw-cup__image__productLabel cw-cup__image__productLabel--sale">sale</span>
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Green square rush cup">Green square rush cup</h4>
+                        </div>
+                        <div data-salePrice="£80.87" class="cw-cup__info cw-cup__info--withSale">
+                            from: <span class="cw-cup__price cw-cup__price--withSale">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup1.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup1@2x.png" alt="cup1" />
+                            <span class="cw-cup__image__productLabel cw-cup__image__productLabel--sale">sale</span>
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Black and white crazy stripes cup">Black and white crazy stripes cup</h4>
+                        </div>
+                        <div data-salePrice="£80.87" class="cw-cup__info cw-cup__info--withSale">
+                            from: <span class="cw-cup__price cw-cup__price--withSale">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup2.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup2@2x.png" alt="cup1" />
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Green square rush cup">Green square rush cup</h4>
+                        </div>
+                        <div class="cw-cup__info">
+                            from: <span class="cw-cup__price">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup1.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup1@2x.png" alt="cup1" />
+                            <span class="cw-cup__image__productLabel cw-cup__image__productLabel--sale">sale</span>
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Black and white crazy stripes cup">Black and white crazy stripes cup</h4>
+                        </div>
+                        <div data-salePrice="£80.87" class="cw-cup__info cw-cup__info--withSale">
+                            from: <span class="cw-cup__price cw-cup__price--withSale">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-cup">
+                    <div class="cw-cup__container">
+                        <div class="cw-cup__image">
+                            <img class="img-responsive display-mobile" src="assets/images/cup2.png" alt="cup1" />
+                            <img class="img-responsive display-desktop" src="assets/images/cup2@2x.png" alt="cup1" />
+                        </div>
+                        <div class="cw-cup__title">
+                            <h4 title="Green square rush cup">Green square rush cup</h4>
+                        </div>
+                        <div class="cw-cup__info">
+                            from: <span class="cw-cup__price">£67.00</span> /box <Br> price exc. VAT
+                        </div>
+                        <div class="cw-cup__actions">
+                            <button class="cw-btn cw-btn--primary choose-cup">Choose cups</button>
+                            <button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--favorite">Favorite</button><button class="cw-btn cw-btn--sm cw-btn__labeled cw-btn__labeled--compare">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cw-layout__bottom-panel">
+                <div class="cw-pagination cw-pagination--shadow">
+                    <div class="cw-pagination__control cw-pagination__control--arrowLeft">Prev</div>
+                    <div class="cw-pagination__control">1</div>
+                    <div class="cw-pagination__control">2</div>
+                    <div class="cw-pagination__control">3</div>
+                    <div class="cw-pagination__control">...</div>
+                    <div class="cw-pagination__control">10</div>
+                    <div class="cw-pagination__control cw-pagination__control--arrowRight">Next</div>
+                </div>
+            </section>
+            <section class="cw-layout">
+                <article class="cw-post cw-post--patterns">
+                    <div>
+                        <img class="img-responsive cw-post__category-image" src="assets/images/category image.png" alt="customise" />
+                    </div>
+                    <div class="cw-textBlock cw-textBlock--long">
+                        <div id="cw-textBlock__container" class="cw-textBlock__container">
+                                <div id="cw-textBlock__overlay" class="cw-textBlock__overlay"></div>
+                            <h3 title="Patterns">Patterns</h3>
+                            <p>Decorate your cup with a beautiful pattern that's both pleasing to the eye and perfect for your hand. Decorate your cup with a beautiful pattern that's both pleasing to the eye and perfect for your hand. Decorate your cup with a beautiful pattern that's both pleasing to the eye and perfect for your hand.</p>
+                            <p>Decorate your cup with a beautiful pattern that's both pleasing to the eye and perfect for your hand. Decorate your cup with a beautiful pattern that's both pleasing to the eye and perfect for your hand.</p>
+                            <button id="cw-btn--readmore" class="cw-btn cw-btn--outline cw-btn--readmore cw-btn--absolute mt-10">Read more</button>
+                        </div>
+                    </div>
+                </article>
+                <h2 title="Learn how to make your magic cup" class="text-center text-uppercase">Learn how to make your magic cup</h3>
+                <article class="cw-post cw-post--customizeCup">
+                    <div>
+                        <img class="img-responsive display-mobile" src="assets/images/customise.png" alt="customise" />
+                        <img class="cw-util-img-withSpace display-desktop" src="assets/images/customise@2x.png" alt="customise" />
+                    </div>
+                    <div class="cw-textBlock cw-textBlock--short cw-textBlock--right">
+                        <div class="cw-textBlock__container">
+                                <div></div>
+                            <h3 title="Customise your cup">Customise your cup</h3>
+                            <p>When you are a beginnine magician and you want to try yourself in our magic</p>
+                            <button class="cw-btn cw-btn--outline mt-10">Design a cup yourself</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="cw-post cw-post--designService">
+                    <div class="text-right">
+                        <img class="img-responsive display-mobile" src="assets/images/design.png" alt="customise" />
+                        <img class="cw-util-img-withSpace display-desktop" src="assets/images/design@2x.png" alt="customise" />
+                    </div>
+                    <div class="cw-textBlock cw-textBlock--short cw-textBlock--left">
+                        <div class="cw-textBlock__container">
+                                <div></div>
+                            <h3 title="Bespoke design service">Bespoke design service</h3>
+                            <p>When you would like to hire a CupWizard who conjures a cup especially for you</p>
+                            <button class="cw-btn cw-btn--outline mt-10">Contact the wizard</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="cw-newsletter">
+                <div class="text-center">
+                    <div class="cw-newsletter__title">
+                        <h2 title="Newsletter">Newsletter</h3>
+                    </div>
+                    <div class="cw-newsletter__info">
+                        <p>Stay informed of upcoming product release and receive discounts and special offers.</p>
+                    </div>
+                    <button id="signup" class="cw-btn cw-btn--outline">Sign up</button>
+                </div>
+                <div class="cw-newsletter__bottom-cups-container">
+                    <img class="img-responsive display-mobile" src="assets/images/cups.png" alt="cups" />
+                    <img class="img-responsive display-desktop" src="assets/images/cups@2x.png" alt="cups" />
+                </div>
+            </section>
+        </section>
+        <footer class="cw-footer">
+            <section class="cw-footer__menu">
+                <section class="cw-layout">
+                    <div class="cw-footer__container">
+                        <div class="cw-footer__column">
+                            <span class="cw-footer__title">Cupwiz</span>
+                            <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Cupwiz magic</a></li>
+                                <li><a href="#">Our cups</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="cw-footer__column">
+                            <span class="cw-footer__title">Shopping</span>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Delivery & payment</a></li>
+                                <li><a href="#">Returns & refunds</a></li>
+                                <li><a href="#">Terms & conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="cw-footer__column">
+                            <span class="cw-footer__title">Categories</span>
+                            <ul>
+                                <li><a href="#">Readymade designs</a></li>
+                                <li><a href="#">Customise your cup</a></li>
+                                <li><a href="#">Bespoke design cup</a></li>
+                                <li><a href="#">Lids</a></li>
+                            </ul>
+                        </div>
+                        <div class="cw-footer__column">
+                            <span class="cw-footer__title">Blog</span>
+                            <ul>
+                                <li><a href="#">Articles</a></li>
+                                <li><a href="#">Case studies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="img-responsive" src="assets/svg/logo mono.svg" alt="Cupwiz logo" />
+                    </div>
+                </section>
+            </section>
+            <section class="cw-layout">
+                <div class="cw-footer__bottom">
+                    <div class="cw-footer__copyright">
+                        <div>Copyright &copy; 2018 CupWiz</div>
+                        <div>Created by <strong>bold</strong></div>
+                    </div>
+                    <div class="cw-footer__socialmedia">
+                        <a href="#" target="_blank"><img src="assets/svg/instagram.svg" alt="CupWiz - Instagram" /></a>
+                        <a href="#" target="_blank"><img src="assets/svg/facebook.svg" alt="CupWiz - Facebook" /></a>
+                        <a href="#" target="_blank"><img src="assets/svg/youtube.svg" alt="CupWiz - YouTube" /></a>
+                        <a href="#" target="_blank"><img src="assets/svg/pinterest.svg" alt="CupWiz - Printerest" /></a>
+                    </div>
+                    <div class="cw-footer__payments">
+                        <a href="#" target="_blank"><img src="assets/svg/visa.svg" alt="Visa" /></a>
+                        <a href="#" target="_blank"><img src="assets/svg/mastercard.svg" alt="Mastercard" /></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <div id="modal" class="cw-modal">
+            <div id="modal-box" class="cw-modal__box">
+                <div class="cw-util-newsletter-gradient"></div>
+                <div class="cw-modal__outer">
+                    <div class="cw-modal__container">
+                        <div class="cw-modal__content">
+                            <p>Sign up to our newsletter and receive 10% of your first order!</p>
+                        </div>
+                        <form class="cw-form" method="POST">
+                            <label for="name">Enter Your Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <label for="email">Enter Your Email</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                            <button class="cw-btn cw-btn--primary">SIGN UP</button>
+                            <span id="close-modal">&times;</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $('.cw-hero__carousel').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                {
+                  breakpoint: 1200,
+                  settings: {
+                    slidesToShow: 3
+                  }
+                },
+                {
+                  breakpoint: 576,
+                  settings: {
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+        </script>
+        <script src="public/dist/js/script.bundle.js"></script>
+    </body>
+</html>

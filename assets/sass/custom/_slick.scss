@@ -1,0 +1,45 @@
+.cw-hero__carousel {
+    .slick-track {
+        display: flex;
+    }
+
+    .slick-arrow {
+        background: none;
+        border: none;
+        width: 50px;
+        transition: background-position .3s;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        z-index: 9999;
+        color: transparent;
+
+        &.slick-prev{
+            background: url('../svg/category\ prev\ arrow.svg') right center no-repeat;
+            left: 0;
+
+            @media (min-width: 577px) and (max-width: 1400px) {
+                left: -30px;
+            }
+
+            &:hover {
+                background-position-x: 0;
+            }
+        }
+
+        &.slick-next {
+            background: url('../svg/category\ next\ arrow.svg') left center no-repeat;
+            right: 0;
+
+            @media (min-width: 577px) and (max-width: 1400px) {
+                right: -30px;
+            }
+
+            &:hover {
+                background-position-x: 20px;
+            }
+        }
+    }
+}

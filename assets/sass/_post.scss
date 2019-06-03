@@ -1,0 +1,20 @@
+.cw-post {
+    margin: 60px 0;
+    position: relative;
+
+    &--patterns {
+        @media (min-width: 992px) {
+            height: 350px;
+            background: url('../images/category\ image@2x.png') center center no-repeat;
+            background-size: 108%;
+            margin-bottom: 150px;
+        }
+    }
+
+    &__category-image {
+    
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+}

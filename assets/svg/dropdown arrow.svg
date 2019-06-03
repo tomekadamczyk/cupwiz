@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>dropdown arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.98675694,3.37450995 C9.03021939,3.54067398 8.98684198,3.72484662 8.85662471,3.85506389 L3.85645441,8.8552342 C3.66119226,9.05049634 3.34460977,9.05049634 3.14934763,8.8552342 L3.14337529,8.84926186 C2.94811314,8.65399971 2.94811314,8.33741722 3.14337529,8.14215508 L7.78536511,3.50016526 L3.14453209,-1.14066775 C2.94926995,-1.3359299 2.94926995,-1.65251239 3.14453209,-1.84777454 L3.15083495,-1.85407739 C3.34609709,-2.04933954 3.66267958,-2.04933954 3.85794173,-1.85407739 L8.85546791,3.14344879 C8.92168932,3.2096702 8.96545233,3.28984547 8.98675694,3.37450995 Z" id="path-1"></path>
+    </defs>
+    <g id="Category" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dropdown-arrow">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#333" transform="translate(6.000000, 3.500000) rotate(-270.000000) translate(-6.000000, -3.500000) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,67 @@
+.cw-newsletter {
+    margin-top: 100px;
+    position: relative;
+    z-index: 99999;
+
+    &__title {
+        display: inline-block;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 35px;
+            position: relative;
+            font-weight: 700;
+            letter-spacing: 4px;
+    
+            @media (min-width: 768px) {
+                font-size: 80px;
+            }
+    
+            &::before {
+                content: '';
+                border-bottom: 4px solid $dark; 
+                border-left: 2px solid transparent; 
+                border-right: 2px solid transparent; 
+                height: 0; 
+                width: 30px;
+                display: inline-block;
+                position: absolute;
+                left: 56px;
+                top: 0px;
+    
+                @media (min-width: 768px) {
+                    border-bottom: 7px solid $dark; 
+                    border-left: 3px solid transparent; 
+                    border-right: 3px solid transparent; 
+                    left: 118px;
+                    top: 2px;
+                    width: 70px;
+                }
+            }
+        }
+    }
+
+
+    &__info {
+        max-width: 400px;
+        margin: 0 auto 15px auto;
+    }
+    
+    &__bottom-cups-container {
+        position: relative; 
+
+        img {
+            position: absolute;
+            top: -40px;
+            z-index: -1;
+
+            @media (min-width: 768px) {
+                top: -100px;
+            }
+
+            @media (min-width: 1200px) {
+                top: -125px;
+            }
+        }
+    }
+}

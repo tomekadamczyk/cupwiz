@@ -1,0 +1,55 @@
+.cw-util-blur-background {
+    filter: blur(3px);
+}
+
+.cw-util-header-gradient {
+    background: linear-gradient(to bottom, black 0%, rgba(0,0,0,0) 65%);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.cw-util-newsletter-gradient {
+    background: linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.7) 65%);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.cw-util-img-withSpace {
+    max-width: 66%;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.display-mobile {
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.display-desktop {
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

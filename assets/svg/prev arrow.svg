@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="14px" viewBox="0 0 9 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>prev arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.39884842,5.49696109 L12.3503471,0.545462399 C12.7408714,0.154938107 13.3740364,0.154938107 13.7645607,0.545462399 C14.155085,0.935986691 14.155085,1.56915167 13.7645607,1.95967596 L8.10770643,7.61653021 C7.9119989,7.81223774 7.65535417,7.9098683 7.39884842,7.90942191 C7.14234268,7.9098683 6.88569794,7.81223774 6.68999042,7.61653021 L1.03313617,1.95967596 C0.642611878,1.56915167 0.642611878,0.935986691 1.03313617,0.545462399 C1.42366046,0.154938107 2.05682544,0.154938107 2.44734973,0.545462399 L7.39884842,5.49696109 Z" id="path-1"></path>
+    </defs>
+    <g id="Category" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="prev-arrow" transform="translate(0.000000, -1.000000)">
+            <g id="arrow-/-right" transform="translate(4.500000, 8.000000) scale(-1, 1) rotate(-90.000000) translate(-4.500000, -8.000000) translate(-3.000000, 4.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#333333" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
